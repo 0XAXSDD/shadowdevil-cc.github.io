@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ShadowDevil Blog</title>
   
-  <subtitle>This is hacker</subtitle>
+  <subtitle> 杨帆，起航！</subtitle>
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
