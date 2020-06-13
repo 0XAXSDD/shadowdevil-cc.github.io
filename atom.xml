@@ -6,7 +6,7 @@
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
-  <updated>2020-06-08T12:02:45.559Z</updated>
+  <updated>2020-06-13T13:43:13.578Z</updated>
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
@@ -17,17 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>article title</title>
-    <link href="https://shadowdevil-cc.github.io/2020/06/08/article-title/"/>
-    <id>https://shadowdevil-cc.github.io/2020/06/08/article-title/</id>
-    <published>2020-06-08T12:02:45.000Z</published>
-    <updated>2020-06-08T12:02:45.559Z</updated>
+    <title>用hexo搭建博客一些问题</title>
+    <link href="https://shadowdevil-cc.github.io/2020/06/13/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"/>
+    <id>https://shadowdevil-cc.github.io/2020/06/13/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</id>
+    <published>2020-06-13T12:22:54.000Z</published>
+    <updated>2020-06-13T13:43:13.578Z</updated>
     
     <summary type="html">
+    
+      &lt;h3 id=&quot;问题来源：next主题更换外观，github没法正确加载样式&quot;&gt;&lt;a href=&quot;#问题来源：next主题更换外观，github没法正确加载样式&quot; class=&quot;headerlink&quot; title=&quot;问题来源：next主题更换外观，github没法正确加载样式&quot;&gt;&lt;/a&gt;问题来源：next主题更换外观，github没法正确加载样式&lt;/h3&gt;&lt;p&gt;next主题是我参考了众多主题，最喜欢的一种！&lt;/p&gt;
     
     </summary>
     
     
+      <category term="前端" scheme="https://shadowdevil-cc.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="hexo" scheme="https://shadowdevil-cc.github.io/tags/hexo/"/>
     
   </entry>
   
