@@ -6,7 +6,7 @@
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
-  <updated>2020-06-14T08:45:08.633Z</updated>
+  <updated>2020-06-16T08:24:08.001Z</updated>
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DC靶机全套资源链接</title>
+    <link href="https://shadowdevil-cc.github.io/2020/06/16/DC%E9%9D%B6%E6%9C%BA%E5%85%A8%E5%A5%97%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5/"/>
+    <id>https://shadowdevil-cc.github.io/2020/06/16/DC%E9%9D%B6%E6%9C%BA%E5%85%A8%E5%A5%97%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5/</id>
+    <published>2020-06-16T08:10:51.000Z</published>
+    <updated>2020-06-16T08:24:08.001Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;DC靶机全套环境百度云资源&quot;&gt;&lt;a href=&quot;#DC靶机全套环境百度云资源&quot; class=&quot;headerlink&quot; title=&quot;DC靶机全套环境百度云资源&quot;&gt;&lt;/a&gt;DC靶机全套环境百度云资源&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+      <category term="DC" scheme="https://shadowdevil-cc.github.io/tags/DC/"/>
+    
+  </entry>
   
   <entry>
     <title>用hexo搭建博客一些问题</title>
