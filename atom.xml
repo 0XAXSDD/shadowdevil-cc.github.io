@@ -6,7 +6,7 @@
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
-  <updated>2020-06-16T08:24:08.001Z</updated>
+  <updated>2020-07-16T09:14:34.402Z</updated>
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>来自远古的爆破殿堂级神器</title>
+    <link href="https://shadowdevil-cc.github.io/2020/07/16/%E6%9D%A5%E8%87%AA%E8%BF%9C%E5%8F%A4%E7%9A%84%E7%88%86%E7%A0%B4%E6%AE%BF%E5%A0%82%E7%BA%A7%E7%A5%9E%E5%99%A8/"/>
+    <id>https://shadowdevil-cc.github.io/2020/07/16/%E6%9D%A5%E8%87%AA%E8%BF%9C%E5%8F%A4%E7%9A%84%E7%88%86%E7%A0%B4%E6%AE%BF%E5%A0%82%E7%BA%A7%E7%A5%9E%E5%99%A8/</id>
+    <published>2020-07-16T08:51:46.000Z</published>
+    <updated>2020-07-16T09:14:34.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;hydra–来自地狱的九头蛇&quot;&gt;&lt;a href=&quot;#hydra–来自地狱的九头蛇&quot; class=&quot;headerlink&quot; title=&quot;hydra–来自地狱的九头蛇&quot;&gt;&lt;/a&gt;hydra–来自地狱的九头蛇&lt;/h3&gt;&lt;p&gt;当然今天这里的九头蛇不是漫威里面的九头蛇组织，但作为一款爆破工具，是真的很bug的存在&lt;br&gt;大喊一声九头蛇万岁，不过分！！！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+      <category term="爆破" scheme="https://shadowdevil-cc.github.io/tags/%E7%88%86%E7%A0%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sqli通关录1-20</title>
+    <link href="https://shadowdevil-cc.github.io/2020/06/27/sqli%E9%80%9A%E5%85%B3%E5%BD%951-9/"/>
+    <id>https://shadowdevil-cc.github.io/2020/06/27/sqli%E9%80%9A%E5%85%B3%E5%BD%951-9/</id>
+    <published>2020-06-27T10:13:52.000Z</published>
+    <updated>2020-06-27T13:35:07.060Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;sqli注入的第一关&quot;&gt;&lt;a href=&quot;#sqli注入的第一关&quot; class=&quot;headerlink&quot; title=&quot;sqli注入的第一关&quot;&gt;&lt;/a&gt;sqli注入的第一关&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="靶场" scheme="https://shadowdevil-cc.github.io/categories/%E9%9D%B6%E5%9C%BA/"/>
+    
+    
+      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io/tags/SQL%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>DC靶机全套资源链接</title>
