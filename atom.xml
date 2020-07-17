@@ -6,7 +6,7 @@
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
-  <updated>2020-07-16T09:14:34.402Z</updated>
+  <updated>2020-07-17T08:08:26.685Z</updated>
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql注入之打狗棍法</title>
+    <link href="https://shadowdevil-cc.github.io/2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/"/>
+    <id>https://shadowdevil-cc.github.io/2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/</id>
+    <published>2020-07-17T07:42:21.000Z</published>
+    <updated>2020-07-17T08:08:26.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;sql注入是top10大漏洞之一，且最近几年有直追top 1的趋势，也是我们日常遇到的最多的漏洞之一，危害性很大。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io/tags/SQL%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>来自远古的爆破殿堂级神器</title>

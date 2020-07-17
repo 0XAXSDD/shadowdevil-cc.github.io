@@ -108,4 +108,18 @@
         <tag>SQL注入</tag>
       </tags>
   </entry>
+  <entry>
+    <title>sql注入之打狗棍法</title>
+    <url>/shadowdevil-cc.github.io/2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>sql注入是top10大漏洞之一，且最近几年有直追top 1的趋势，也是我们日常遇到的最多的漏洞之一，危害性很大。</p>
+<h2 id="初探打狗棍法"><a href="#初探打狗棍法" class="headerlink" title="初探打狗棍法"></a>初探打狗棍法</h2><p>这里搭建的环境是php+apache+sqli-lab<br>第一关<br>输入一个单引号’报错</p>
+<img src="/shadowdevil-cc.github.io/.io//2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/1.jpg" class title="This is an image">
+]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>SQL注入</tag>
+      </tags>
+  </entry>
 </search>
