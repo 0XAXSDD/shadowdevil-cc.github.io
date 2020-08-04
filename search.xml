@@ -132,4 +132,22 @@
         <tag>SQL注入</tag>
       </tags>
   </entry>
+  <entry>
+    <title>骚操作-xss进后台一些思考</title>
+    <url>/shadowdevil-cc.github.io/2020/08/04/%E9%AA%9A%E6%93%8D%E4%BD%9C-xss%E8%BF%9B%E5%90%8E%E5%8F%B0%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h1 id="如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？"><a href="#如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？" class="headerlink" title="如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？"></a>如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？</h1><h2 id="第一个思路"><a href="#第一个思路" class="headerlink" title="第一个思路"></a>第一个思路</h2><p>稍微有些麻烦。<br>使用js实现跳转，跳转到一个钓鱼页面，要求管理员重新输入账号密码<br>记录下信息。</p>
+<p>这里可以利用beef-xss加Setoolkit到达效果。</p>
+<h2 id="第二个思路"><a href="#第二个思路" class="headerlink" title="第二个思路"></a>第二个思路</h2><p>通过中间件漏洞，一些低版本的中间件存在一些绕过httponly的cve漏洞<br>查查相应的cve</p>
+<h2 id="通过phpinfo"><a href="#通过phpinfo" class="headerlink" title="通过phpinfo"></a>通过phpinfo</h2><p>可以通过js获取到目标访问phpinfo的内容</p>
+<p>因为phpinfo会记录当前的cookie</p>
+<p>提取出来就可以拿到cookie。</p>
+<h2 id="直接rce"><a href="#直接rce" class="headerlink" title="直接rce"></a>直接rce</h2><p>可以直接通过xss到达rce的目的<br>参考文章<br><a href="https://www.cnblogs.com/-qing-/p/10980038.html" target="_blank" rel="noopener">https://www.cnblogs.com/-qing-/p/10980038.html</a></p>
+]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>骚操作</tag>
+      </tags>
+  </entry>
 </search>

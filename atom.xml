@@ -6,7 +6,7 @@
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
-  <updated>2020-07-27T07:00:37.983Z</updated>
+  <updated>2020-08-04T09:07:12.101Z</updated>
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>骚操作-xss进后台一些思考</title>
+    <link href="https://shadowdevil-cc.github.io/2020/08/04/%E9%AA%9A%E6%93%8D%E4%BD%9C-xss%E8%BF%9B%E5%90%8E%E5%8F%B0%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
+    <id>https://shadowdevil-cc.github.io/2020/08/04/%E9%AA%9A%E6%93%8D%E4%BD%9C-xss%E8%BF%9B%E5%90%8E%E5%8F%B0%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</id>
+    <published>2020-08-04T08:54:55.000Z</published>
+    <updated>2020-08-04T09:07:12.101Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？&quot;&gt;&lt;a href=&quot;#如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+      <category term="骚操作" scheme="https://shadowdevil-cc.github.io/tags/%E9%AA%9A%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>sql注入之打狗棍法</title>
