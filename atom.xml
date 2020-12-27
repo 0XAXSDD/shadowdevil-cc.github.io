@@ -3,7 +3,7 @@
   <title>0XAXSDD Blog</title>
   
   <subtitle> 哪有那么多天赋异禀，我只是知道什么时候我该干什么！欢迎关注Gamma安全实验室公众号</subtitle>
-  <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="https://shadowdevil-cc.github.io/"/>
   <updated>2020-08-05T01:32:25.419Z</updated>
@@ -33,7 +33,7 @@
       <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
-      <category term="骚操作" scheme="https://shadowdevil-cc.github.io/../tags/%E9%AA%9A%E6%93%8D%E4%BD%9C/"/>
+      <category term="骚操作" scheme="https://shadowdevil-cc.github.io//../tags/%E9%AA%9A%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
@@ -55,7 +55,7 @@
       <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
-      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io/../tags/SQL%E6%B3%A8%E5%85%A5/"/>
+      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io//../tags/SQL%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
@@ -76,7 +76,7 @@
       <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
-      <category term="爆破" scheme="https://shadowdevil-cc.github.io/../tags/%E7%88%86%E7%A0%B4/"/>
+      <category term="爆破" scheme="https://shadowdevil-cc.github.io//../tags/%E7%88%86%E7%A0%B4/"/>
     
   </entry>
   
@@ -97,7 +97,7 @@
       <category term="靶场" scheme="https://shadowdevil-cc.github.io/categories/%E9%9D%B6%E5%9C%BA/"/>
     
     
-      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io/../tags/SQL%E6%B3%A8%E5%85%A5/"/>
+      <category term="SQL注入" scheme="https://shadowdevil-cc.github.io//../tags/SQL%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
@@ -118,7 +118,7 @@
       <category term="渗透" scheme="https://shadowdevil-cc.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
-      <category term="DC" scheme="https://shadowdevil-cc.github.io/../tags/DC/"/>
+      <category term="DC" scheme="https://shadowdevil-cc.github.io//../tags/DC/"/>
     
   </entry>
   
@@ -139,7 +139,7 @@
       <category term="前端" scheme="https://shadowdevil-cc.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="hexo" scheme="https://shadowdevil-cc.github.io/../tags/hexo/"/>
+      <category term="hexo" scheme="https://shadowdevil-cc.github.io//../tags/hexo/"/>
     
   </entry>
   
