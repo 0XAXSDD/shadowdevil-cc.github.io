@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ShadowDevil Blog</title>
+  <title>0XAXSDD Blog</title>
   
   <subtitle> 哪有那么多天赋异禀，我只是知道什么时候我该干什么！</subtitle>
   <link href="/shadowdevil-cc.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://shadowdevil-cc.github.io/</id>
   
   <author>
-    <name>ShadowDevil</name>
+    <name>0XAXSDD</name>
     
   </author>
   
@@ -144,11 +144,11 @@
   </entry>
   
   <entry>
-    <title>欢迎来到！ShadowDevil 的博客</title>
+    <title>欢迎来到！0xAXSDD 的博客</title>
     <link href="https://shadowdevil-cc.github.io/2020/06/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>https://shadowdevil-cc.github.io/2020/06/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-06-08T11:31:17.911Z</published>
-    <updated>2020-06-11T10:53:40.673Z</updated>
+    <updated>2020-12-27T04:25:53.335Z</updated>
     
     <summary type="html">
     
@@ -156,8 +156,8 @@
       
         
         
-          &lt;p&gt;我是一名信息安全爱好者，和在座的一样，我从小就有一个黑客梦，因为&lt;br&gt;Hackers are cool people&lt;/p&gt;
-&lt;h3 id=&quot;of-course！&quot;&gt;&lt;a href=&quot;#of-course！&quot; class=&quot;headerlink&quot; title=&quot;of
+          &lt;p&gt;我是一名黑客小菜鸡，励志做一名红队人员，大家一起见证我的红队之路吧!&lt;/p&gt;
+&lt;h3 id=&quot;of-course！&quot;&gt;&lt;a href=&quot;#of-course！&quot; class=&quot;headerlink&quot; title=&quot;of course！&quot;&gt;&lt;/a&gt;of
         
       
     
