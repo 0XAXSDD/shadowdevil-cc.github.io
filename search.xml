@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>用hexo搭建博客一些问题</title>
-    <url>/0XAXSDD/2020/06/13/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
+    <url>/shadowdevil-cc.github.io/2020/06/13/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h3 id="问题来源：next主题更换外观，github没法正确加载样式"><a href="#问题来源：next主题更换外观，github没法正确加载样式" class="headerlink" title="问题来源：next主题更换外观，github没法正确加载样式"></a>问题来源：next主题更换外观，github没法正确加载样式</h3><p>next主题是我参考了众多主题，最喜欢的一种！</p>
 <a id="more"></a>
 <h2 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
@@ -29,7 +29,7 @@
   </entry>
   <entry>
     <title>欢迎来到！0xAXSDD 的博客</title>
-    <url>/0XAXSDD/2020/06/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <url>/shadowdevil-cc.github.io/2020/06/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>我是一名黑客小菜鸡，励志做一名红队人员，大家一起见证我的红队之路吧!</p>
 <p>欢迎关注“微信公众号Gamma安全实验室” </p>
 <p>第一时间获得安全骚操作，以及实用安全工具。</p>
@@ -38,7 +38,7 @@
   </entry>
   <entry>
     <title>DC靶机全套资源链接</title>
-    <url>/0XAXSDD/2020/06/16/DC%E9%9D%B6%E6%9C%BA%E5%85%A8%E5%A5%97%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5/</url>
+    <url>/shadowdevil-cc.github.io/2020/06/16/DC%E9%9D%B6%E6%9C%BA%E5%85%A8%E5%A5%97%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5/</url>
     <content><![CDATA[<h3 id="DC靶机全套环境百度云资源"><a href="#DC靶机全套环境百度云资源" class="headerlink" title="DC靶机全套环境百度云资源"></a>DC靶机全套环境百度云资源</h3><a id="more"></a>
 <p>链接：<a href="https://pan.baidu.com/s/1atwpsBtrlGaOo9afQnDTng" target="_blank" rel="noopener">https://pan.baidu.com/s/1atwpsBtrlGaOo9afQnDTng</a><br>提取码：a6wm<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p>
 <p>###配套DC靶机实战手册</p>
@@ -53,7 +53,7 @@
   </entry>
   <entry>
     <title>来自远古的爆破殿堂级神器</title>
-    <url>/0XAXSDD/2020/07/16/%E6%9D%A5%E8%87%AA%E8%BF%9C%E5%8F%A4%E7%9A%84%E7%88%86%E7%A0%B4%E6%AE%BF%E5%A0%82%E7%BA%A7%E7%A5%9E%E5%99%A8/</url>
+    <url>/shadowdevil-cc.github.io/2020/07/16/%E6%9D%A5%E8%87%AA%E8%BF%9C%E5%8F%A4%E7%9A%84%E7%88%86%E7%A0%B4%E6%AE%BF%E5%A0%82%E7%BA%A7%E7%A5%9E%E5%99%A8/</url>
     <content><![CDATA[<h3 id="hydra–来自地狱的九头蛇"><a href="#hydra–来自地狱的九头蛇" class="headerlink" title="hydra–来自地狱的九头蛇"></a>hydra–来自地狱的九头蛇</h3><p>当然今天这里的九头蛇不是漫威里面的九头蛇组织，但作为一款爆破工具，是真的很bug的存在<br>大喊一声九头蛇万岁，不过分！！！</p>
 <a id="more"></a>
 <p>hydra的下载，自行百度，有手就行</p>
@@ -91,7 +91,7 @@
   </entry>
   <entry>
     <title>sqli通关录1-20</title>
-    <url>/0XAXSDD/2020/06/27/sqli%E9%80%9A%E5%85%B3%E5%BD%951-9/</url>
+    <url>/shadowdevil-cc.github.io/2020/06/27/sqli%E9%80%9A%E5%85%B3%E5%BD%951-9/</url>
     <content><![CDATA[<h3 id="sqli注入的第一关"><a href="#sqli注入的第一关" class="headerlink" title="sqli注入的第一关"></a>sqli注入的第一关</h3><a id="more"></a>
 <p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错：’’1’’ LIMIT 0,1’<br>重新构造：1’–+-<br>返回结果正常<br>判断为字符型注入型<br>接下来操作不用我多说了</p>
 <h3 id="sqli注入的第二关"><a href="#sqli注入的第二关" class="headerlink" title="sqli注入的第二关"></a>sqli注入的第二关</h3><p>sql注入判断：<br>payload:1’<br>返回结果:mysql报错：’’ LIMIT 0,1’<br>重新构造：1 –+-<br>返回结果正常<br>判断为数字注入型<br>接下来操作不要我多说了</p>
@@ -111,7 +111,7 @@
   </entry>
   <entry>
     <title>sql注入之打狗棍法</title>
-    <url>/0XAXSDD/2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/</url>
+    <url>/shadowdevil-cc.github.io/2020/07/17/sql%E6%B3%A8%E5%85%A5%E4%B9%8B%E6%89%93%E7%8B%97%E6%A3%8D%E6%B3%95/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>sql注入是top10大漏洞之一，且最近几年有直追top 1的趋势，也是我们日常遇到的最多的漏洞之一，危害性很大。</p>
 <h2 id="初探打狗棍法"><a href="#初探打狗棍法" class="headerlink" title="初探打狗棍法"></a>初探打狗棍法</h2><p>这里搭建的环境是php+apache+sqli-lab<br>最新版的4.0安全狗</p>
 <a id="more"></a>
@@ -145,7 +145,7 @@
   </entry>
   <entry>
     <title>骚操作-xss进后台一些思考</title>
-    <url>/0XAXSDD/2020/08/04/%E9%AA%9A%E6%93%8D%E4%BD%9C-xss%E8%BF%9B%E5%90%8E%E5%8F%B0%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</url>
+    <url>/shadowdevil-cc.github.io/2020/08/04/%E9%AA%9A%E6%93%8D%E4%BD%9C-xss%E8%BF%9B%E5%90%8E%E5%8F%B0%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<h1 id="如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？"><a href="#如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？" class="headerlink" title="如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？"></a>如果xss打不到管理员cookie，又怎么绕过httponly来进入管理员后台？</h1><a id="more"></a>
 <h2 id="第一个思路"><a href="#第一个思路" class="headerlink" title="第一个思路"></a>第一个思路</h2><p>稍微有些麻烦。<br>使用js实现跳转，跳转到一个钓鱼页面，要求管理员重新输入账号密码<br>记录下信息。</p>
 <p>这里可以利用beef-xss加Setoolkit到达效果。</p>
